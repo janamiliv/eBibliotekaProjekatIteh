@@ -1,0 +1,46 @@
+.navbar {
+    background-color: #cc444b;
+}
+
+.btn {
+    background-color: #df7373;
+    color: white;
+    font-weight: bold;
+    border-color: #da5552;
+}
+.btn:active,
+.btn:hover {
+    border-color: #da5552 !important;
+    background-color: white !important;
+    color: #df7373;
+}
+.dropdown-item:hover {
+    background-color: #da5552 !important;
+    color: white !important;
+}
+th {
+    background-color: #cc444b !important;
+    color: white !important;
+    border: 0 !important;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e4b1ab;
+}
+.table-info {
+    background-color: #e3969579;
+}
+td {
+}
+.dodajNovoPozajmljivanjeDugme {
+    position: fixed;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    right: 25px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
