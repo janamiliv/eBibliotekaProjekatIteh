@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Clan;
+namespace EBiblioteka\Http\Controllers\Clan;
 
-use App\Http\Controllers\Controller;
-use App\Task;
+use EBiblioteka\Http\Controllers\Controller;
+use EBiblioteka\Task;
 use Illuminate\Support\Facades\Auth;
 
 class MojaPozajmljivanjaController extends Controller

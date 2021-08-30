@@ -10,7 +10,7 @@
         <body>
             <input hidden id="chartData" value='<?php echo json_encode($pozajmljivanje); ?>'>
             <div id="timeline" style="height: 50vh;"></div>
-            <div id="piechart" style=""></div>
+            <div id="piechart" style="" ></div>
             <script type="text/javascript">
                 const chartData = JSON.parse(document.getElementById("chartData").value);
 
@@ -19,29 +19,40 @@
                 });
                 google.charts.setOnLoadCallback(drawChart);
 
+                
+
                 function drawChart() {
                     var container = document.getElementById('timeline');
+                    var options = {
+                        
+                        colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6']
+                        
+                    };
                     var chart = new google.visualization.Timeline(container);
                     var dataTable = new google.visualization.DataTable();
 
                     dataTable.addColumn({
                         type: 'string',
-                        id: 'Pozajmljivanje'
+                        id: 'Pozajmljivanje',
+                        
                     });
                     dataTable.addColumn({
                         type: 'date',
-                        id: 'Start'
+                        id: 'Start',
+                        
                     });
                     dataTable.addColumn({
                         type: 'date',
-                        id: 'Deadline'
+                        id: 'Deadline',
+                        
                     });
 
                     dataTable.addRows(chartData.map(cd => {
                         return [cd.naziv, new Date(cd.created_at), new Date(cd.deadline)]
                     }))
 
-                    chart.draw(dataTable);
+                    chart.draw(dataTable, options);
+                    
                 }
 
                 let numberFinished = chartData.filter(cd => cd.finished == true).length;
@@ -56,13 +67,14 @@
 
                     var data = google.visualization.arrayToDataTable([
                         ['Task', 'Broj'],
-                        ['Zavrsen', numberFinished],
-                        ['Nezavrsen', numberNotFinished]
+                        ['Vracena knjiga', numberFinished],
+                        ['Nije vracena knjiga ', numberNotFinished]
 
                     ]);
 
                     var options = {
-                        title: 'Statistika pozajmljivanja'
+                        title: 'Statistika pozajmljivanja',
+                        colors: ['#5f0f40', '#0F4C5C', '#ec8f6e', '#f3b49f', '#f6c7b6']
                     };
 
                     var chart = new google.visualization.PieChart(document.getElementById('piechart'));

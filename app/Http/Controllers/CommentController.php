@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace EBiblioteka\Http\Controllers;
 
-use App\Comment;
+use EBiblioteka\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

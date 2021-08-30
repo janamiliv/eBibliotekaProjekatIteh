@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace EBiblioteka;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -39,7 +39,7 @@ class User extends Authenticatable
 
     public function uloga()
     {
-        return $this->belongsTo("App\Role", "role_id", "id");
+        return $this->belongsTo("EBiblioteka\Role", "role_id", "id");
     }
     public function imaUlogu($uloga)
     {
@@ -47,10 +47,10 @@ class User extends Authenticatable
     }
     public function kreiranaPozajmljivanja()
     {
-        return  $this->hasMany('App\Task', "user_id", 'id');
+        return  $this->hasMany('EBiblioteka\Task', "user_id", 'id');
     }
     public function assignedTasks()
     {
-        return  $this->hasMany('App\Assignment', "assigned_to", 'id');
+        return  $this->hasMany('EBiblioteka\Assignment', "assigned_to", 'id');
     }
 }

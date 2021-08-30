@@ -1,33 +1,36 @@
+body {
+    background-color: #3b0927;
+  }
 .navbar {
-    background-color: #cc444b;
+    background-color: #0F4C5C;
 }
 
 .btn {
-    background-color: #df7373;
+    background-color: #9A031E;
     color: white;
     font-weight: bold;
-    border-color: #da5552;
+    border-color: #9A031E;
 }
 .btn:active,
 .btn:hover {
-    border-color: #da5552 !important;
+    border-color: #9A031E !important;
     background-color: white !important;
-    color: #df7373;
+    color: #9A031E;
 }
 .dropdown-item:hover {
-    background-color: #da5552 !important;
+    background-color: #9A031E !important;
     color: white !important;
 }
 th {
-    background-color: #cc444b !important;
+    background-color: #5F0F40 !important;
     color: white !important;
     border: 0 !important;
 }
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #e4b1ab;
+    background-color: #C4A287;
 }
 .table-info {
-    background-color: #e3969579;
+    background-color: #C3B299;
 }
 td {
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace EBiblioteka\Http\Controllers;
 
-use App\User;
+use EBiblioteka\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller

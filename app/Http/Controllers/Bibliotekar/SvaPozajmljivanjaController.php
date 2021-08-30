@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Bibliotekar;
+namespace EBiblioteka\Http\Controllers\Bibliotekar;
 
-use App\Assignment;
+use EBiblioteka\Assignment;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Task;
+use EBiblioteka\Http\Controllers\Controller;
+use EBiblioteka\Task;
 use Illuminate\Support\Facades\Auth;
 
 class SvaPozajmljivanjaController extends Controller

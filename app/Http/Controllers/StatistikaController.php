@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace EBiblioteka\Http\Controllers;
 
-use App\Task;
+use EBiblioteka\Task;
 use Illuminate\Http\Request;
 
 class StatistikaController extends Controller

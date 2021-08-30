@@ -13,6 +13,6 @@ require("./bootstrap");
  */
 
 require("./components/Clan/MojaPozajmljivanja");
-require("./components/Poslodavac/SvaPozajmljivanja");
+require("./components/Bibliotekar/SvaPozajmljivanja");
 require("./components/Example");
 require("./components/Timezone");

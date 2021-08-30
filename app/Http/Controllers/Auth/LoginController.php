@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace EBiblioteka\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use EBiblioteka\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 
