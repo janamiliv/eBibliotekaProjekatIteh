@@ -79,6 +79,6 @@ export default class Timezone extends Component {
     }
 }
 
-if (document.getElementById("timezone")) {
-    ReactDOM.render(<Timezone />, document.getElementById("timezone"));
-}
+// if (document.getElementById("timezone")) {
+//     // ReactDOM.render(<Timezone />, document.getElementById("timezone"));
+// }

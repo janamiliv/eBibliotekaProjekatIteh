@@ -16,8 +16,10 @@ class PoslodavacPristup
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->imaUlogu('poslodavac'))
-            return $next($request);
+        if (!is_null(Auth::user())) {
+            if (Auth::user()->imaUlogu('poslodavac'))
+                return $next($request);
+        }
         return redirect('home');
     }
 }

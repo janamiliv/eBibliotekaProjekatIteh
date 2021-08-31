@@ -16,8 +16,14 @@ class IzvrsilacPristup
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->imaUlogu('izvrsilac'))
+        if (!is_null(Auth::user())) {
+            if (Auth::user()->imaUlogu('izvrsilac'))
             return $next($request);
+        }
         return redirect('home');
+
+        
+        
+        
     }
 }

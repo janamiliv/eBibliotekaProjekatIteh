@@ -15,4 +15,4 @@ require("./bootstrap");
 require("./components/Clan/MojaPozajmljivanja");
 require("./components/Bibliotekar/SvaPozajmljivanja");
 require("./components/Example");
-require("./components/Timezone");
+// require("./components/Timezone");

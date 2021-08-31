@@ -40,7 +40,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <div id="timezone"></div>
+                    <div id="timezonelol"></div>
                     <ul class="navbar-nav">
 
                     </ul>
