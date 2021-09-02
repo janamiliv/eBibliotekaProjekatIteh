@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import Pozajmljivanje from "./Pozajmljivanje";
 import Forma from "./Forma";
 import {} from "../style.css";
+import { isNull } from "lodash";
 export default class SvaPozajmljivanja extends Component {
     constructor(props) {
         super(props);
@@ -21,7 +22,12 @@ export default class SvaPozajmljivanja extends Component {
         });
     }
     handleSubmit(novoPozajmljivanje) {
-        
+        if (isNull(novoPozajmljivanje)){
+            this.setState(state => {
+                let pozajmljivanja = state.pozajmljivanja;
+                return { pozajmljivanja: pozajmljivanja };
+            });
+        }
         this.setState(state => {
             let pozajmljivanja = state.pozajmljivanja;
             pozajmljivanja.push(novoPozajmljivanje);
