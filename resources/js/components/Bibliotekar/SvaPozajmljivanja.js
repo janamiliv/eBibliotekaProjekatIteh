@@ -21,6 +21,7 @@ export default class SvaPozajmljivanja extends Component {
         });
     }
     handleSubmit(novoPozajmljivanje) {
+        
         this.setState(state => {
             let pozajmljivanja = state.pozajmljivanja;
             pozajmljivanja.push(novoPozajmljivanje);
@@ -53,7 +54,7 @@ export default class SvaPozajmljivanja extends Component {
         return [
             <button
                 type="button"
-                class="btn btn-primary dodajNovoPozajmljivanjeDugme shadow"
+                className="btn btn-primary dodajNovoPozajmljivanjeDugme shadow"
                 data-toggle="modal"
                 data-target="#exampleModalLong"
             >
@@ -70,8 +71,8 @@ export default class SvaPozajmljivanja extends Component {
                             >
                                 Deadline <i className="fas fa-sort"></i>
                             </th>
-                            <th>Zavrsen</th>
-                            <th>Izvrsioci</th>
+                            <th>Vraceno</th>
+                            <th>Izdao</th>
                             <th>Akcije</th>
                         </tr>
                     </thead>
