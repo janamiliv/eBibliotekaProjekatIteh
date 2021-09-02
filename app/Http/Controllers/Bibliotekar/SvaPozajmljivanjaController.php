@@ -51,14 +51,6 @@ class SvaPozajmljivanjaController extends Controller
             ]);
     }
 
-    public function edit($id)
-    {
-
-        echo $id;
-        Task::where('id', $id)->update([
-            'finished' => true
-        ]);
-    }
     public function store(Request $request)
     {
         $naziv = $request->input('naziv');
@@ -85,6 +77,16 @@ class SvaPozajmljivanjaController extends Controller
         $pozajmljivanje = Task::first()->where('id', $id)->with('komentari')->get();
         return view('pozajmljivanje', [
             'pozajmljivanje' => $pozajmljivanje
+        ]);
+    }
+
+    
+    public function edit($id)
+    {
+
+        echo $id;
+        Task::where('id', $id)->update([
+            'finished' => true
         ]);
     }
 }

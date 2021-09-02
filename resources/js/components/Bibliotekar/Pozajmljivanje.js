@@ -18,6 +18,7 @@ export default class Pozajmljivanje extends Component {
         this.prikazPozajmljivanja = this.prikazPozajmljivanja.bind(this);
     }
     zavrsiPozajmljivanje() {
+        // console.log('pozvana');
         axios
             .put(`http://127.0.0.1:8000/svaPozajmljivanja/${this.state.pozajmljivanje.id}`)
             .then(res => {
@@ -60,7 +61,7 @@ export default class Pozajmljivanje extends Component {
                         }}
                         onClick={this.zavrsiPozajmljivanje.bind(this)}
                     >
-                        {this.state.pozajmljivanje.finished ? "✓" : "✘"}
+                        {this.state.pozajmljivanje.finished ? "📗" : "📕"}
                     </td>
 
                     <td align="center">

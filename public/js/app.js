@@ -74963,7 +74963,7 @@ var MojaPozajmljivanja = /*#__PURE__*/function (_Component) {
         scope: "col"
       }, "Deadline"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         scope: "col"
-      }, "Zavrsen"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
+      }, "Vraceno"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         scope: "col"
       }, "Izdao"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         scope: "col"
@@ -75077,7 +75077,7 @@ var Pozajmljivanje = /*#__PURE__*/function (_Component) {
           cursor: "pointer"
         },
         onClick: this.zavrsiPozajmljivanje.bind(this)
-      }, this.state.pozajmljivanje.finished ? "✓" : "✘"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.state.assignedBy.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.state.assignedBy.email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, this.state.pozajmljivanje.finished ? "📗" : "📕"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.state.assignedBy.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.state.assignedBy.email), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "http://127.0.0.1:8000/mojaPozajmljivanja/".concat(this.state.pozajmljivanje.id)
       }, "Pregled")));
     }
@@ -75537,7 +75537,7 @@ var SvaPozajmljivanja = /*#__PURE__*/function (_Component) {
         onClick: this.sortByDate.bind(this)
       }, "Deadline ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-sort"
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Zavrsen"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Izvrsioci"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Akcije"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.pozajmljivanja.map(function (z) {
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Vraceno"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Izdao"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", null, "Akcije"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.pozajmljivanja.map(function (z) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pozajmljivanje__WEBPACK_IMPORTED_MODULE_2__["default"], {
           onDelete: _this2.handleDelete.bind(_this2),
           key: z.id,
@@ -75687,7 +75687,7 @@ var Pozajmljivanje = /*#__PURE__*/function (_Component) {
             cursor: "pointer"
           },
           onClick: this.zavrsiPozajmljivanje.bind(this)
-        }, this.state.pozajmljivanje.finished ? "✓" : "✘"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+        }, this.state.pozajmljivanje.finished ? "📗" : "📕"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
           align: "center"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
           className: "text-left"

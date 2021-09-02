@@ -19,7 +19,7 @@ export default class MojaPozajmljivanja extends Component {
                     <tr>
                         <th scope="col">Naziv pozajmljivanja</th>
                         <th scope="col">Deadline</th>
-                        <th scope="col">Zavrsen</th>
+                        <th scope="col">Vraceno</th>
                         <th scope="col">Izdao</th>
                         <th scope="col">Email</th>
                     </tr>

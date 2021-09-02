@@ -34,7 +34,7 @@ export default class Pozajmljivanje extends Component {
                     style={{ color: `${this.isFinished()}`, cursor: "pointer" }}
                     onClick={this.zavrsiPozajmljivanje.bind(this)}
                 >
-                    {this.state.pozajmljivanje.finished ? "✓" : "✘"}
+                    {this.state.pozajmljivanje.finished ? "📗" : "📕"}
                 </td>
                 <td>{this.state.assignedBy.name}</td>
                 <td>{this.state.assignedBy.email}</td>
